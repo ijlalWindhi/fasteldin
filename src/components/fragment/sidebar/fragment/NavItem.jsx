@@ -20,7 +20,12 @@ export default function NavItem({ label, link, icon, visibility }) {
                 borderRadius="0"
                 visibility={visibility}
             >
-                <Text fontSize={"sm"} fontWeight={"normal"}>
+                <Text
+                    fontSize={"sm"}
+                    fontWeight={"normal"}
+                    maxWidth={"80%"}
+                    overflow={"hidden"}
+                >
                     {label}
                 </Text>
                 <Icon

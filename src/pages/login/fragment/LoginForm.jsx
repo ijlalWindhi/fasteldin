@@ -21,7 +21,7 @@ export default function LoginForm() {
 
     const handleLogin = () => {
         if (email === "hc@gmail.com") {
-            navigate("/dashboard/hc");
+            navigate("/dashboard/hc/pengajuan-karyawan");
             localStorage.setItem("role", "hc");
         } else if (email === "karyawan@gmail.com") {
             navigate("/dashboard/karyawan");
