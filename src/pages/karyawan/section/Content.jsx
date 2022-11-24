@@ -88,7 +88,8 @@ export default function Content() {
                         justifyContent={"space-between"}
                         direction={{ base: "column", md: "row" }}
                         my={5}
-                        alignItems={"center"}
+                        alignItems={{ md: "center" }}
+                        gap={{ base: 2, md: 0 }}
                     >
                         <Search
                             placeholder="Search pengajuan"
