@@ -4,6 +4,7 @@ import Login from "../../pages/login";
 import Karyawan from "../../pages/karyawan";
 import HCKaryawan from "../../pages/hc/karyawan";
 import HCDivisiLuar from "../../pages/hc/divisi-luar";
+import CustomerCare from "../../pages/customer care";
 
 export default function Routing() {
     return (
@@ -19,6 +20,7 @@ export default function Routing() {
                 path="/dashboard/hc/pengajuan-divisi-luar"
                 element={<HCDivisiLuar />}
             />
+            <Route path="/dashboard/customercare" element={<CustomerCare />} />
         </Routes>
     );
 }
