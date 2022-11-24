@@ -22,10 +22,13 @@ export default function LoginForm() {
     const handleLogin = () => {
         if (email === "hc@gmail.com") {
             navigate("/dashboard/hc");
+            localStorage.setItem("role", "hc");
         } else if (email === "karyawan@gmail.com") {
             navigate("/dashboard/karyawan");
+            localStorage.setItem("role", "karyawan");
         } else if (email === "customercare@gmail.com") {
             navigate("/dashboard/customercare");
+            localStorage.setItem("role", "customercare");
         } else {
             alert("Email tidak terdaftar");
         }
